@@ -16,7 +16,7 @@ public class Library {
 
     public void infoLibrary(){
         System.out.println(" ");
-        System.out.println("    === Library === \n    " + libraryName.toUpperCase());
+        System.out.println("                 === Library === \n                " + libraryName.toUpperCase());
         for (Section section : sectionList) {
             section.infoSection();
         }

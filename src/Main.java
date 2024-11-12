@@ -1,30 +1,30 @@
 public class Main {
     public static void main(String[] args) {
 
-        Book book1 = new Book("Herry Potter", "J.K Rowlingova", "9788869183157");
-        Book book2 = new Book("Bod obnovy", "Michael Goest", "8595165394214");
-        Book book3 = new Book("Pan prstenu", "J.R.R Tolkein", "80-7203-829-X");
-        Book book4 = new Book("Ferda Mravenec", "Ondrej Sekora", " 978-80-242-6476-9");
+        Book harryPotter = new Book("Harry Potter", "J.K Rowlingova", "9788869183157");
+        Book bodObnovy = new Book("Bod obnovy", "Michael Goest", "8595165394214");
+        Book panPrstenu = new Book("Pan prstenu", "J.R.R Tolkein", "80-7203-829-X");
+        Book ferdaMravenec = new Book("Ferda Mravenec", "Ondrej Sekora", " 978-80-242-6476-9");
 
-        BookShelf bookShelf1 = new BookShelf("Past SCIFI");
-        bookShelf1.addBook(book1);
-        bookShelf1.addBook(book3);
+        BookShelf scifiPastTime = new BookShelf("Past SCIFI");
+        scifiPastTime.addBook(harryPotter);
+        scifiPastTime.addBook(panPrstenu);
 
-        BookShelf bookShelf2 = new BookShelf("Future SCIFI");
-        bookShelf2.addBook(book2);
+        BookShelf scifiFutureTime = new BookShelf("Future SCIFI");
+        scifiFutureTime.addBook(bodObnovy);
 
-        BookShelf bookShelf3 = new BookShelf("Kreslene pohadky");
-        bookShelf3.addBook(book4);
+        BookShelf pohadkyKreslene = new BookShelf("Kreslene pohadky");
+        pohadkyKreslene.addBook(ferdaMravenec);
 
-        Section fiction = new Section("SCI-FI");
-        fiction.addBookShelf(bookShelf1);
-        fiction.addBookShelf(bookShelf2);
+        Section scifi = new Section("SCI-FI");
+        scifi.addBookShelf(scifiPastTime);
+        scifi.addBookShelf(scifiFutureTime);
 
         Section pohadky = new Section("POHADKY");
-        pohadky.addBookShelf(bookShelf3);
+        pohadky.addBookShelf(pohadkyKreslene);
 
         Library library = new Library("Radostin´s Library");
-        library.addSection(fiction);
+        library.addSection(scifi);
         library.addSection(pohadky);
 
         library.infoLibrary();
