@@ -17,8 +17,8 @@ public class BookShelf {
     }
 
     public void infoBookShelfs(){
-        System.out.println("---------------------------");
-        System.out.println("    Book Shelf ID: " + shelfId);
+        System.out.println("------------------------------------------------------");
+        System.out.println("    Book Shelf ID: " + shelfId.toUpperCase());
        for (Book book : books) {
            book.infoBook();
        }

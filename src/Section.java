@@ -15,8 +15,8 @@ public class Section {
     }
 
     public void infoSection() {
-        System.out.println("---------------------------");
-        System.out.println("Name: " + this.sectionName);
+        System.out.println("\n======================================================");
+        System.out.println("∆ Name: " + this.sectionName);
         for (BookShelf bookShelf : bookShelfList) {
             bookShelf.infoBookShelfs();
         }

@@ -10,6 +10,6 @@ public class Book {
     }
 
     public void infoBook(){
-        System.out.println("        • Title: " + title + " - Author: " + author);
+        System.out.println("        » Title: " + title + " - Author: " + author);
     }
 }
